@@ -33,6 +33,22 @@
 
    <img width="1864" height="817" alt="image" src="https://github.com/user-attachments/assets/72b786b4-3839-4084-aa3b-fea1b9d0346d" />
 
+3. Add new cabin crew
+   <img width="823" height="891" alt="image" src="https://github.com/user-attachments/assets/5cb7cd88-5e1a-4fe7-bb42-3b719735f8a6" />
+
+4. View detail cabin crew
+  <img width="903" height="725" alt="image" src="https://github.com/user-attachments/assets/4c5c1cad-90d5-4599-a07e-c39209c95260" />
+
+5. Edit personal data and items cabin crew
+   <img width="736" height="890" alt="image" src="https://github.com/user-attachments/assets/f11d85e5-d6db-4521-93aa-90ef265e7f36" />
+
+6. View all cabin crew
+   <img width="1888" height="648" alt="image" src="https://github.com/user-attachments/assets/853aafc3-ed20-4cda-8e2b-502b712ba4e0" />
+   <img width="1890" height="661" alt="image" src="https://github.com/user-attachments/assets/8ee4988c-4aff-4ae7-b67b-63aec7410a7c" />
+
+
+
+
 
 
 
