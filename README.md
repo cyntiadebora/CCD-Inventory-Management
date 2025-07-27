@@ -1,2 +1,0 @@
-# CCD-Inventory-Management
-
