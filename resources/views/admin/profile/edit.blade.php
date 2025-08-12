@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('title', 'Edit Personal Profile')
+@section('page-title', 'My Profile')
 
 @section('content')
 <div class="container mt-4" style="max-width: 600px; font-family: sans-serif;">

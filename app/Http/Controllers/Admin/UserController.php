@@ -278,7 +278,7 @@ class UserController extends Controller
 
         $admin->update($validatedData);
 
-        return redirect()->route('admin.personal-profile')->with('success', 'Profil berhasil diperbarui.');
+        return redirect()->route('admin.personal-profile')->with('success', 'Profile updated successfully.');
     }
 
 

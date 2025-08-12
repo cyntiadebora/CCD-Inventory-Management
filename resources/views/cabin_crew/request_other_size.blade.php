@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('title', 'Request a Different Item Size')
+@section('page-title', 'Request for Different Items')
 
 @section('content')
 <div class="container mt-4" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">

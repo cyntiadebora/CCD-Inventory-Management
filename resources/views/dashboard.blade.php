@@ -260,15 +260,15 @@
               </a>
 
               {{-- Tombol Delete --}}
-              <form action="{{ route('admin.items.destroy', $item->id) }}" method="POST" style="display:inline">
-                @csrf
-                @method('DELETE')
-                <button type="submit"
-                        class="btn btn-sm btn-pill delete-btn"
-                        style="border: 2px solid red; color: black; background-color: transparent;">
-                        🗑️ Delete
-                </button>
-              </form>
+              <form action="{{ route('admin.items.destroy', $item->id) }}" method="POST" class="delete-form" style="display:inline">
+            @csrf
+            @method('DELETE')
+            <button type="submit"
+                    class="btn btn-sm btn-pill delete-btn"
+                    style="border: 2px solid red; color: black; background-color: transparent;">
+                    🗑️ Delete
+            </button>
+          </form>
             </div>
           </td>
           </tr>
@@ -355,6 +355,32 @@
 
   setInterval(updateClock, 1000);
   updateClock(); // panggil langsung agar tidak nunggu 1 detik
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const deleteForms = document.querySelectorAll('.delete-form');
+
+    deleteForms.forEach(form => {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Cegah submit langsung
+
+        Swal.fire({
+          title: 'Are you sure?',
+          text: "This item will be permanently deleted!",
+          icon: 'warning',
+          showCancelButton: true,
+          confirmButtonColor: '#d33',
+          cancelButtonColor: '#3085d6',
+          confirmButtonText: 'Yes, delete it!',
+          cancelButtonText: 'Cancel'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            form.submit(); // Submit manual kalau user setuju
+          }
+        });
+      });
+    });
+  });
 </script>
 
 

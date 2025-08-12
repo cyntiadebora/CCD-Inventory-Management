@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Current Stock')
+@section('page-title', 'Current Stock')
 
 @section('content')
 <style>

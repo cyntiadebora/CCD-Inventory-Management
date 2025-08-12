@@ -152,9 +152,12 @@
       
     @endif
 
-    <div class="mb-3">
-      <button type="submit" class="btn btn-outline-success text-dark">Update Item</button>
-    </div>
+   <div class="mb-3">
+    <button type="submit" class="btn btn-success text-white fw-bold" style="background-color: #28a745; border-color: #28a745;">
+      Update Item
+    </button>
+  </div>
+
   </form>
 </div>
 

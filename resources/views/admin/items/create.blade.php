@@ -1,5 +1,5 @@
 @extends('layouts.main')
-
+@section('page-title', 'New Item')
 @php
   $sizeLabelsByType = $sizeByCategory->mapWithKeys(function($group, $key) {
       return [$key => $group->pluck('size_label')];
@@ -15,7 +15,7 @@
 
 @section('content')
 <div class="container py-4">
-  <h3>Create New Item</h3>
+  <h3>Add New Item</h3>
 
   @if ($errors->any())
     <div class="alert alert-danger">
@@ -54,7 +54,7 @@
     <div class="form-check mb-3">
       <input type="hidden" name="has_size" value="0">
       <input class="form-check-input" type="checkbox" id="has_size" name="has_size" value="1" {{ old('has_size') ? 'checked' : '' }}>
-      <label class="form-check-label" for="has_size">Has Size</label>
+      <label class="form-check-label" for="has_size">Add Size Variants</label>
     </div>
 
     <div id="size_fields" style="display: none;">
@@ -138,7 +138,10 @@
 </div>
 
 
-    <button type="submit" class="btn btn-outline-success">Save Item</button>
+    <button type="submit" class="btn btn-success text-white fw-bold" style="background-color: #28a745; border-color: #28a745;">
+  Save Item
+</button>
+
   </form>
 </div>
 

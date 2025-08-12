@@ -42,9 +42,11 @@
             <input type="number" name="opening_stock" id="opening_stock" class="form-control" min="0" required>
         </div>
 
-        <button type="submit" class="btn border border-success text-black fw-bold">
-            Save Opening Stock
-        </button>
+       <button type="submit" class="btn btn-success text-white fw-bold" style="background-color: #28a745; border-color: #28a745;">
+  Save Opening Stock
+</button>
+
+
     </form>
 </div>
 @endsection
